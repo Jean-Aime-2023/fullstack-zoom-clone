@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useGetCallById } from "@/hooks/useGetCallById";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import Image from "next/image";
 
 const Table = ({
   title,
@@ -76,7 +77,13 @@ const PersonalRoom = () => {
             });
           }}
         >
-          Copy Invitation
+          <Image
+                src="/icons/copy.svg"
+                alt="feature"
+                width={20}
+                height={20}
+              />
+              &nbsp; Copy Invitation
         </Button>
       </div>
     </section>
