@@ -1,4 +1,5 @@
 import CallList from '@/components/CallList';
+import CallListHome from '@/components/CallListHome';
 import MeetingTypeList from '@/components/MeetingTypeList';
 
 const Home = () => {
@@ -27,16 +28,7 @@ const Home = () => {
       </div>
 
       <MeetingTypeList />
-      <section className="flex size-full flex-col gap-10 text-white mt-10">
-        <section className="flex flex-row justify-between">
-          <h1 className="text-3xl font-bold">Today’s Upcoming Meetings</h1>
-          <p className="text-[18px] hover:underline hover:underline-offset-2 cursor-pointer text-[#ECF0FF]">
-            See all
-          </p>
-        </section>
-
-        <CallList type="upcoming" />
-      </section>
+      <CallListHome type={'upcoming'}/>
     </section>
   );
 };
